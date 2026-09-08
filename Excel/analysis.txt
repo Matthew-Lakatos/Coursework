@@ -1,0 +1,24 @@
+Excel / Power Query:
+
+Excel is a powerful tool for formatting data and performing large data analysis on massive datasets, however, the interface is gigantic, with thousands options present to the user who may be looking for a simple calculaion of the whole sheet, such as messing with keybinds and scrolling through the many present options to simply calculate a mean. while the processing might be low latency, the user is presented with a large workload of manipulating the data until it can be used in this format.
+This is a great tool for small file analysis and data collection, however as size grows, the complexity also does, such as knowing how to split a dataset into seperate tables for data manipulation (such as for power query utilising sql), similar to Microsoft access database
+Excel sheets also do not necessarily have the same schema (formatting, columns, row layout etc.), which is the main use of power query, the software that transforms the data.
+
+Observations & why they matter:
+
+Power query supports many data sources
+- my application should not assume a single input format.
+
+It provides many transformations
+- existing software is powerful but exposes many operations and utilities
+
+Transformations are represented as repeated steps
+- my application could retain processing/context
+
+The interface provides many controls
+- the interface should be largely hidden for the user for the most automated utility, and i must investigate whether more complex interfaces are suitable for more experienced users alongside debugging
+
+.
+What will differ?
+
+Existing applications already provide extensive data transformation functionality. the project does not need to reproduce every possible operation, but must determine which operations are necessary under a simple natural-language interface.
